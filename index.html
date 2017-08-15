@@ -3,12 +3,13 @@
   <head>
         <meta charset="utf-8">
         <title>GllacyShop</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header class = "main-header">
             <nav class = "main-navigation">
                 <a href = "#" class = "header-logo">
-                    <img src = "#" width = "100" height = "40">
+                    <img src = "img/logo.svg" width = "154" height = "64" alt = "Gllacy">
                 </a>
                 <ul class = "site-nav">
                     <li>
@@ -33,16 +34,16 @@
                     </li>
                 </ul>
             </nav>
-            <p>С 10 до 20, ежедневно<br>
-            8 812 450-25-25</p>
+            <p class="hours-text">С 10 до 20, ежедневно</p>
+            <p class="phone-text">8 812 450-25-25</p>
         </header>
         
         <main class = "container">
             <h1 class = "visually-hidden">GllacyShop</h1>
             <setion class = "promo-buy-two">
                 <h2 class = "visually-hidden">Специальное предложение</h2>
-                <img src = "#" width = "150" height ="100">
-                <p>Крем-брюле и  пломбир с малиновым джемом</p>
+                <img src = "img/DoubleCream_1.jpg" width = "1045" height ="881">
+                <p class="promo-text">Крем-брюле и  пломбир с малиновым джемом</p>
                 <a href = "#" class = "btn btn-gllacy">Давайте оба</a>
                 <ul class = "slider promo-slider">
                     <li class = "active"></li>
@@ -69,7 +70,7 @@
                 <ul class = "top-sell-items-list">
                     <li class = "top-sell-item">
                         <a href = "#">
-                            <img src = "#" width = "200" height = "200">
+                            <img src = "img/OrangeCream.png" width = "267" height = "267" alt="Orange Icecream">
                         </a>
                         <a href = "#">
                             <p class = "item-specification">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -77,7 +78,7 @@
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
-                            <img src = "#" width = "200" height = "200">
+                            <img src = "img/CoffeeCream.png" width = "267" height = "267" alt="Coffee Icecream">
                         </a>
                         <a href = "#">
                             <p class = "item-specification">Сливочно-кофейное с кусочками шоколада</p>
@@ -85,7 +86,7 @@
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
-                            <img src = "#" width = "200" height = "200">
+                            <img src = "img/StrawberryCream.png" width = "267" height = "267" alt="Strawberry Icecream">
                         </a>
                         <a href = "#">
                             <p class = "item-specification">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -93,7 +94,7 @@
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
-                            <img src = "#" width = "200" height = "200">
+                            <img src = "img/CaramelCream.png" width = "267" height = "267" alt="Caramel Icecream">
                         </a>
                         <a href = "#">
                             <p class = "item-specification">Сливочное крем-брюле с карамельной подливкой</p>
@@ -101,7 +102,7 @@
                     </li>
                 </ul>
             </section>
-            <section class = "about-us">
+            <section class = "about-us info-text">
                 <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного произсодства на развес</h3>
                 <ul class = "advantages">
                     <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий</li>
@@ -110,20 +111,20 @@
                     <li>Доставка нашего мороженого до заказчиков осуществояется в специальном термопаке, который не дает мороженому растаять и пути и позволяет сохранить превосходный вкус</li>
                 </ul>
             </section>
-            <article class = "blog-page">
+            <article class = "blog-page info-text">
                 <h4>Новое в нашем блоге</h4>
-                <a class = "blog-news"><p>10 способов сервировки фруктовых щербетов к столу</p></a> 
+                <a class = "blog-news"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a> 
             </article>
             <section class = "subscribe">
                 <h3 class = "visually-hidden">Подписка на рассылку</h3>
-                <p>Подпишитесь на нашу сладкую рассылку и будете  всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
+                <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете  всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
                 <form  method="post" class="subscribe-form">
                     <input type="email" name="email" placeholder="Электронная почта">
                     <button type="submit" class="btn btn-gllacy">Отправить</button>
                 </form>
             </section>
             
-            <section class = "contacts">
+            <section class = "contacts info-text">
                 <h3 class = "visually-hidden">Контактная информация</h3>
                 <p>Адрес главного офиса и офлайн магазина:<br>
                     
@@ -142,10 +143,10 @@
         <footer class = "main-footer">
             <div class = "footer-social">
                 <ul>
-                    <li><a href = "#" class = "btn-social btn-twiter">Твиттер</a></li>
-                    <li><a href = "#" class = "btn-social btn-instagram">Инстраграм</a></li>
-                    <li><a href = "#" class = "btn-social btn-fb">Фейсбук</a></li>
-                    <li><a href = "#" class = "btn-social btn-vk"></a>Вконтакте</li>
+                    <li><a href = "#" class = "btn-social btn-twiter"><img src="img/twitter.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-instagram"><img src="img/instagram.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-fb"><img src="img/fb.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-vk"><img src="img/vk.svg" width="32" height="32"/></a></li>
                 </ul>
             </div>
             <div class = "footer-extra-info-nav">
@@ -165,7 +166,7 @@
                 </ul>
             </div>
             <div class = "copyright-block">
-                <a href = "htmlacademy.com"><img src= "#" class = "developer-logo" width= "20" height = "20"></a>
+                <a href = "htmlacademy.com"><img src= "img/logo-htmlacademy.svg" class = "developer-logo" width= "108" height = "39" alt="HTNLAcademy logo"></a>
                 <p>Сделано в HTML Academy &copy; 2017</p>
             </div>
         </footer>
