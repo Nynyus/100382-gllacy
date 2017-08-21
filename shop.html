@@ -25,7 +25,8 @@
                 </ul>
                 <ul class = "user-nav">
                     <li class = "search">
-                        <input type ="search">
+                        <label for="search-window" class="visually_hidden">поиск</label>
+                        <input type ="search" id="search-window">
                     </li>
                     <li class = "login">
                         <a href = "#">Вход</a>
@@ -50,54 +51,63 @@
             <section class = "filters">
                 <form class="catalog-filter" method="get" action="https://echo.htmlacademy.ru">
                     <div class = "filter-sort">
-                        <label>Сортировка</label>
+                        <label for="sorting">Сортировка</label>
                         <select name ="sort-by">
-                            <option>По популярности</option>
+                            <option id="sorting">По популярности</option>
                         </select>
                     </div>
                     <div class = "filter-price">
-                        <label>Цена: 100 руб. - 500 руб.</label>
-                        <input type = "range" min = "100" max = "500">
+                        <label for="price-range">Цена: 100 руб. - 500 руб.</label>
+                        <input id="price-rabge" type = "range" min = "100" max = "500">
                     </div>
                     <div class = "filter-fat-level">
                     <legend>Жирность:</legend>
                         <ul>
                           <li>
-                              <input type="radio" name="fat-level" value="0%">
-                              0%</li>
+                              <input id="level-0" type="radio" name="fat-level" value="0%">
+                              <label for="level-0">0%</label>
+                          </li>
                           <li>
-                              <input type="radio" name="fat-level" value="10%"> до 10%</li>
+                              <input id="level-10" type="radio" name="fat-level" value="10%">
+                              <label for="level-10">до 10%</label>
+                            </li>
                            <li>
-                               <input type="radio" name="fat-level" value="30%"> до 30%</li>
+                               <input id="level-30" type="radio" name="fat-level" value="30%">
+                               <label for="level-30">до 30%</label>
+                            </li>
                           <li>
-                              <input type="radio" name="fat-level" value="30+"> выше 30%</li>
+                              <input id="level-30-up" type="radio" name="fat-level" value="30+">
+                              <label for="level-30-up">выше 30%</label>
+                            </li>
                         </ul>
                     </div>
                     <div class = "filter-fillings">
-                        <legend>Наполнители:</legend>
+                        <legend>Наполнители:</legend> 
                         <ul>
                           <li>
-                            <input type="checkbox" name="chocolate" checked>
-                            Шоколадные
+                            <input id="choco" type="checkbox" name="chocolate" checked>
+                            <label for="choco">Шоколадные</label>
                           </li>
                           <li>
-                            <input type="checkbox" name="sugger-powdered" checked>
-                            Сахарные присыпки
+                            <input id="suger" type="checkbox" name="sugger-powdered" checked>
+                            <label for="suger">Сахарные присыпки</label>
                           </li>
                           <li >
-                            <input type="checkbox" name="fruits">
-                            Фрукты
+                            <input id="fruits" type="checkbox" name="fruits">
+                            <label for="fruits">Фрукты
+                              </label>
+                            </li>
+                          <li>
+                            <input id="syrops" type="checkbox" name="Syrops" >
+                            <label for="syrops">Сиропы</label>
                           </li>
                           <li>
-                            <input type="checkbox" name="Syrops" >
-                            Сиропы
+                            <input id="jams" type="checkbox" name="jams">
+                            <label for="jams">Джемы</label>
                           </li>
-                          <li>
-                            <input type="checkbox" name="jams">
-                            Джемы
-                          </li>
-                        </ul>
+                        </ul> 
                     </div>
+                    <button class="btn">Применить</button>
    
                 </form>
             </section>
@@ -107,64 +117,56 @@
                     <li class = "select-item top-sell-item">
                         <a href = "#">
                             <img src = "img/OrangeCream.png" width = "267" height = "267" alt="Orange Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">310<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                         </a>
                     </li>
                     <li class = "select item top-sell-item">
                         <a href = "#">
                             <img src = "img/CoffeeCream.png" width = "267" height = "267" alt="Coffee Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">380<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-кофейное с кусочками шоколада</p>
                         </a>
                     </li>
                     <li class = "select-item top-sell-item">
                         <a href = "#">
                             <img src = "img/StrawberryCream.png" width = "267" height = "267" alt="Strawberry Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">355<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-клубничное с присыпкой из белого шоколада</p>
                         </a>
                     </li>
                     <li class = "select item top-sell-item">
                         <a href = "#">
                             <img src = "img/CaramelCream.png" width = "267" height = "267" alt="Caramel Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">415<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное крем-брюле с карамельной подливкой</p>
                         </a>
                     </li>
                     <li class = "select item top-sell-item">
                         <a href = "#">
                             <img src = "img/CranberryCream.png" width = "267" height = "267" alt="Cranberry Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">325<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с брусничным джемом</p>
                         </a>
                     </li>
                     <li class = "select-item top-sell-item">
                         <a href = "#">
                             <img src = "img/BlueberryCream.png" width = "267" height = "267" alt="Blueberry Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">410<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-черничное с цельными ягодами черники</p>
                         </a>
                     </li>
                     <li class = "select item">
                         <a href = "#">
                             <img src = "img/LemonCream.png" width = "267" height = "267" alt="Lemon Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">375<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-лимонное с карамельной присыпкой</p>
                         </a>
                     </li>
                     <li class = "select-item">
                         <a href = "#">
                             <img src = "img/ChocoChipCream.png" width = "267" height = "267" alt="ChocolateChip Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">320<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с шоколадной стружкой</p>
                         </a>
                     </li>
@@ -172,84 +174,81 @@
                    <li class = "select-item">
                         <a href = "#">
                             <img src = "img/VanilaCream.png" width = "267" height = "267" alt="Vanila Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">440<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-ванильное с кусочками шоколада</p>
                         </a>
                     </li>
                     <li class = "select item">
                         <a href = "#">
                             <img src = "img/MentolCream.png" width = "267" height = "267" alt="Mentol Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">435<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с ментоловым сиропом</p>
                         </a>
                     </li>
                     <li class = "select-item">
-                        <a href = "#"><img src = "img/DarkChocoCream.png" width = "267" height = "267" alt="Dark Chocolate Icecream">
-                        </a>
                         <a href = "#">
-                            <p class = "item-specification">Сливочное с кусочками черного шоколада</p>
+                        <img src = "img/DarkChocoCream.png" width = "267" height = "267" alt="Dark Chocolate Icecream">
+                        <p class="price-tag">355<img src="img/ruble.svg">/кг</p>
+                        <p class = "item-specification">Сливочное с кусочками черного шоколада</p>
                         </a>
                     </li>
                     <li class = "select item">
                         <a href = "#">
                             <img src = "img/MintCream.png" width = "267" height = "267" alt="Mint Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">420<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с мятным сиропом</p>
                         </a>
                     </li>
                 </ul>
-                <ul class = "slider item-slider">
-                    <li class = "active active-page">
-                        <a href = "#">1</a>
+                <ul class="slider item-slider">
+                    <li class= "active active-page">
+                        <a href="#">1</a>
                     </li>
                     <li>
-                        <a href = "#">2</a>
+                        <a href="#">2</a>
                     </li>
                     <li>
-                        <a href = "#">3</a>
+                        <a href="#">3</a>
                     </li>
                     <li>
-                        <a href = "#">4</a>
+                        <a href="#">4</a>
                     </li>
                     <li>
-                        <a href = "#">5</a>
+                        <a href="#">5</a>
                     </li>
                     <li>
-                        <a href = "#">></a>
+                        <a href="#">></a>
                     </li>
                 </ul>
             </section>
             
-            <footer class = "main-footer">
+            <footer class="main-footer">
                 <div class = "footer-social">
                     <ul>
-                    <li><a href = "#" class = "btn-social btn-twiter"><img src="img/twitter.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-instagram"><img src="img/instagram.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-fb"><img src="img/fb.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-vk"><img src="img/vk.svg" width="32" height="32"/></a></li>
+                    <li><a href="#" class="btn-social btn-twiter"><img src="img/twitter.svg" width="32" height="32" alt="twitter"/></a></li>
+                    <li><a href="#" class="btn-social btn-instagram"><img src="img/instagram.svg" width="32" height="32" alt="instagram"/></a></li>
+                    <li><a href="#" class="btn-social btn-fb"><img src="img/fb.svg" width="32" height="32" alt="facebook"/></a></li>
+                    <li><a href="#" class="btn-social btn-vk"><img src="img/vk.svg" width="32" height="32" alt="vkontakte"/></a></li>
                 </ul>
                 </div>
                 <div class = "footer-extra-info-nav">
                     <ul>
                         <li>
-                            <a href = "#">Для поставщиков</a>
+                            <a href="#">Для поставщиков</a>
                         </li>
                         <li>
-                            <a href = "#">Наши документы</a>
+                            <a href="#">Наши документы</a>
                         </li>
                         <li>
-                            <a href = "#">О производстве</a>
+                            <a href="#">О производстве</a>
                         </li>
                         <li>
-                            <a href = "#">Экологические стандарты</a>
+                            <a href="#">Экологические стандарты</a>
                         </li>
                     </ul>
                 </div>
-                <div class = "copyright-block">
-                    <a href = "htmlacademy.com"><img src= "img/logo-htmlacademy.svg" class = "developer-logo" width= "108" height = "39" alt="HTNLAcademy logo"></a>
+                <div class="copyright-block">
+                    <a href="htmlacademy.com"><img src="img/logo-htmlacademy.svg" class="developer-logo" width="108" height="39" alt="HTNLAcademy logo"></a>
                     <p>Сделано в HTML Academy &copy; 2017</p>
                 </div>
             </footer>  

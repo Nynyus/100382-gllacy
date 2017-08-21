@@ -24,12 +24,13 @@
                 </ul>
                 <ul class = "user-nav">
                     <li class = "search">
-                        <input type ="search">
+                        <label for="search-window" class="visually_hidden">поиск</label>
+                        <input type ="search" id="search-window">
                     </li>
-                    <li class = "login">
+                    <li class = "btn login">
                         <a href = "#">Вход</a>
                     </li>
-                    <li class = "cart">
+                    <li class = "btn cart">
                         <a href = "#">Корзина</a>
                     </li>
                 </ul>
@@ -46,58 +47,62 @@
                 <p class="promo-text">Крем-брюле и  пломбир с малиновым джемом</p>
                 <a href = "#" class = "btn btn-gllacy">Давайте оба</a>
                 <ul class = "slider promo-slider">
-                    <li class = "active"></li>
+                    <li class = "active"><img src="img/filter-button.svg"></li>
                     <li>
-                        <a href = "#"></a>
+                        <a href = "#"><img src="img/radio-off.svg"></a>
                     </li>
                 <li>
-                    <a href = "#"></a>
+                    <a href = "#"><img src="img/radio-off.svg"></a>
                 </li>
                 </ul>
                 </setion>
             <section class = "promo-rasberry">
-                <h2>Малинка даром!</h2>
-                <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a href = "#" class = "btn btn-gllacy">Хочу варенье!</a>
+                <a href="#">    
+                    <h2>Малинка даром!</h2>
+                    <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <p class="btn btn-gllacy">Хочу варенье!</p>
+                </a>
             </section>
             <section class = "promo-chocolate">
-                <h2>Шоколадки    даром!</h2>
-                <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-                <a href = "#" class = "btn btn-gllacy">Хочу шоколадки!</a>
+                <a href = "#">
+                    <h2>Шоколадки    даром!</h2>
+                    <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+                    <p class = "btn btn-gllacy">Хочу шоколадки!</p>
+                </a>
             </section>
             <section class = "top-sell-items">
                 <h2 class = "visually-hidden">Хиты продаж</h2>
                 <ul class = "top-sell-items-list">
                     <li class = "top-sell-item">
                         <a href = "#">
+                            <img src="img/hit.svg" width="61" height="61">
                             <img src = "img/OrangeCream.png" width = "267" height = "267" alt="Orange Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">310<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                         </a>
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
+                            <img src="img/hit.svg" width="61" height="61">
                             <img src = "img/CoffeeCream.png" width = "267" height = "267" alt="Coffee Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">380<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-кофейное с кусочками шоколада</p>
                         </a>
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
+                            <img src="img/hit.svg" width="61" height="61">
                             <img src = "img/StrawberryCream.png" width = "267" height = "267" alt="Strawberry Icecream">
-                        </a>
-                        <a href = "#">
+                            <p class="price-tag">355<img src="img/ruble.svg">/кг</p>
                             <p class = "item-specification">Сливочно-клубничное с присыпкой из белого шоколада</p>
                         </a>
                     </li>
                     <li class = "top-sell-item">
                         <a href = "#">
-                            <img src = "img/CaramelCream.png" width = "267" height = "267" alt="Caramel Icecream">
-                        </a>
-                        <a href = "#">
-                            <p class = "item-specification">Сливочное крем-брюле с карамельной подливкой</p>
+                            <img src="img/hit.svg" width="61" height="61">
+                            <img src="img/CaramelCream.png" width="267" height="267" alt="Caramel Icecream">
+                            <p class="price-tag">415<img src="img/ruble.svg">/кг</p>
+                            <p class="item-specification">Сливочное крем-брюле с карамельной подливкой</p>
                         </a>
                     </li>
                 </ul>
@@ -112,14 +117,17 @@
                 </ul>
             </section>
             <article class = "blog-page info-text">
-                <h4>Новое в нашем блоге</h4>
-                <a class = "blog-news"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a> 
+                <a class = "blog-news" href=#>
+                    <p>Новое в нашем блоге</p>
+                    <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+                </a> 
             </article>
             <section class = "subscribe">
                 <h3 class = "visually-hidden">Подписка на рассылку</h3>
                 <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете  всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
                 <form  method="post" class="subscribe-form">
-                    <input type="email" name="email" placeholder="Электронная почта">
+                    <label for="email" class="visually-hidden">Электронная почта</label>
+                    <input type="email" id="email" name="email" placeholder="Электронная почта">
                     <button type="submit" class="btn btn-gllacy">Отправить</button>
                 </form>
             </section>
@@ -143,30 +151,30 @@
         <footer class = "main-footer">
             <div class = "footer-social">
                 <ul>
-                    <li><a href = "#" class = "btn-social btn-twiter"><img src="img/twitter.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-instagram"><img src="img/instagram.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-fb"><img src="img/fb.svg" width="32" height="32"/></a></li>
-                    <li><a href = "#" class = "btn-social btn-vk"><img src="img/vk.svg" width="32" height="32"/></a></li>
+                    <li><a href="#" class="btn-social btn-twiter" alt="twitter"><img src="img/twitter.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-instagram"alt="instagram"><img src="img/instagram.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-fb" alt="facebook"><img src="img/fb.svg" width="32" height="32"/></a></li>
+                    <li><a href = "#" class = "btn-social btn-vk" alt="vkontakte"><img src="img/vk.svg" width="32" height="32"/></a></li>
                 </ul>
             </div>
             <div class = "footer-extra-info-nav">
                 <ul>
                     <li>
-                        <a href = "#">Для поставщиков</a>
+                        <a href="#">Для поставщиков</a>
                     </li>
                     <li>
-                        <a href = "#">Наши документы</a>
+                        <a href="#">Наши документы</a>
                     </li>
                     <li>
-                        <a href = "#">О производстве</a>
+                        <a href="#">О производстве</a>
                     </li>
                     <li>
-                        <a href = "#">Экологические стандарты</a>
+                        <a href="#">Экологические стандарты</a>
                     </li>
                 </ul>
             </div>
             <div class = "copyright-block">
-                <a href = "htmlacademy.com"><img src= "img/logo-htmlacademy.svg" class = "developer-logo" width= "108" height = "39" alt="HTNLAcademy logo"></a>
+                <a href="htmlacademy.com"><img src= "img/logo-htmlacademy.svg" class = "developer-logo" width= "108" height = "39" alt="HTNLAcademy logo"></a>
                 <p>Сделано в HTML Academy &copy; 2017</p>
             </div>
         </footer>
